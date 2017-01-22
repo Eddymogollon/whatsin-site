@@ -1,0 +1,21 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "Watson test",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

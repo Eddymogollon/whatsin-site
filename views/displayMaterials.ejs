@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>WhatsIn</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pacifico" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <div class="materiallist">
+            <h1 style="font-family:Oswald; font-size: 250%"><a href="/"><i class="fa fa-chevron-left" aria-hidden="true"></i>&nbspBack</a></h1>
+        <center><h1 style="font-family:Pacifico; font-size: 350%">Your Study Material Options</h1></center>
+            <br></br>
+            <div class="AvailableMaterial"></div>
+            <table class="table table"> 
+            <thead>
+                <tr class="textTableHeader">
+                    <th>Material Type</th>
+                    <th>Course Code</th>
+                </tr> 
+            </thead>    
+            <tbody class="materialBody">
+                
+                <% if (materials.length < 1) { %>
+                    <p>Sorry, but no materials matched your description</p>
+                <% } else { %>
+                 
+                    <% for(var i = 0; i < materials.length; i++) { %>
+                        <%var course_code = materials[i].course_code; %>
+                        <%var study_material = materials[i].study_material; %>
+                        <tr>
+                        	<td><%= study_material %></td>
+                            <td><%= course_code  %></td>
+
+                        </tr>
+                    <% } %>
+               
+                <% } %>
+              
+
+           
+            </tbody>  

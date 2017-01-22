@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>WhatsIn</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pacifico" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <div class="techlist">
+            <h1 style="font-family:Oswald; font-size: 250%"><a href="/"><i class="fa fa-chevron-left" aria-hidden="true"></i>&nbspBack</a></h1>
+        <center><h1 style="font-family:Pacifico; font-size: 350%">Your Technology Options</h1></center>
+            <br></br>
+            <div class="AvailableTech"></div>
+            <table class="table table"> 
+            <thead>
+                <tr class="textTableHeader">
+                    <th>Material Type</th>
+                    <th>Course Code</th>
+                </tr> 
+            </thead>    
+            <tbody class="techBody">
+                
+                <% if (tech.length < 1) { %>
+                    <p>Sorry, but no technology matched your description</p>
+                <% } else { %>
+                 
+                    <% for(var i = 0; i < tech.length; i++) { %>
+                        <%var course_code = tech[i].course_code; %>
+                        <%var study_material = tech[i].study_material; %>
+                        <tr>
+                            <td><%= course_code  %></td>
+                            <td><%= study_material %></td>
+                        </tr>
+                    <% } %>
+               
+                <% } %>
+              
+
+           
+            </tbody>  
+
+        <!-- courses[i].
+        [ { _id: 58842265e8007c496da5b615,
+            course_code: 'E1234',
+            bookname: 'The Life Of Pi',
+            isbn: '123456',
+            condition: 'New',
+            price: '25',
+            pic_url: 'My photo',
+            __v: 0 },
+          { _id: 588422b7e8007c496da5b617,
+            course_code: 'E1234',
+            bookname: 'Niagara Falls',
+            isbn: '1234567',
+            condition: 'Good',
+            price: '75',
+            pic_url: 'Dunno',
+            __v: 0 } 
+        ] -->
+
+
+
+
+        <!-- load scripts at the bottom of your page -->
+      <!--   <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="displayTextbooks.js"></script> -->
+        </div>
+    </body>
+</html>
+
+<!--
+[
+{
+	"_id" : ObjectId("5883fcfed5b7d61e3bd7d106"),
+	"study_material" : "Calculator",
+	"course_code" : "sads",
+	"contact_info" : "asda",
+	"__v" : 0
+},
+{
+	"_id" : ObjectId("58840006acf3e02149e551f8"),
+	"study_material" : "Calculator",
+	"course_code" : "asd",
+	"contact_info" : "asd",
+	"__v" : 0
+}
+]
+-->

@@ -1,0 +1,72 @@
+
+
+
+.container-fluid {
+  text-align: center;
+ 
+}
+
+.btn {
+  margin: 50px;
+  
+}
+
+h1 center {
+  color: #494955;  
+}
+
+a:link, a:visited {
+    color: #494955;
+} 
+a:hover { 
+    color: orange;
+}
+
+.container-form {
+    max-width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.custom-select {
+     max-width: 20%;
+
+}
+
+.box-height {
+    margin: 0 auto;
+    max-width: 40%;
+    
+    text-align: center;
+}
+
+
+
+body {
+    background: #757F9A; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #5585BB , #EE8D54); 
+background: linear-gradient(to left, #5585BB , #EE8D54); 
+}
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+
+

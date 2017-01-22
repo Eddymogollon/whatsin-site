@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WhatsIn</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pacifico" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+
+<body>
+    <h1 style="font-family:Oswald; font-size: 250%"><a href="/"><i class="fa fa-chevron-left" aria-hidden="true"></i>&nbspBack</a></h1>
+    <h1 style="font-family:pacifico; font-size: 500%"><center>Study Materials</center></h1>
+    <br />
+
+    <div class="container-form">
+      <form method='POST' action='/materialsInput'>
+      <div class="form-group">
+        <label for="study_material">Select Your Study Material:</label>
+          <select class="form-control" id="study_material" name="study_material">
+            <option>(Select One)</option>
+            <option>Smokin Notes</option>
+            <option>Study Edge</option>
+            <option>Tutoring Zone</option>
+            <option>Other</option>
+          </select>
+      </div>
+
+      <div class="form-group">
+        <label for="course_code">Course Code:</label>
+        <input type="text" placeholder="ex. PHY2049, MAC2312" class="form-control" id="course_code" name="course_code">
+           
+        <div style="margin-top: 2.5vh">
+          <label for="contact">Contact Info:</label>
+          <input type="text" placeholder="Email, Phone Number, etc." class="form-control" id="contact" name="contact_info">
+        </div>
+      </div>
+         
+        <center><button type="submit" class="btn btn-default">Submit</button></center>
+      </form>
+    </div>
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
