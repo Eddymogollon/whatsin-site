@@ -32,7 +32,8 @@ router.post('/txtInput', function(req, res) {
         isbn: req.body.isbn,
         condition: req.body.condition,
         price: req.body.price,
-        pic_url: req.body.pic_url
+        pic_url: req.body.pic_url,
+        contact_info: req.body.contact_info
     });
 
     console.log(txtInput);

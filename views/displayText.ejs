@@ -25,6 +25,7 @@
                     <th>ISBN</th>
                     <th>Price</th>
                     <th>Condition</th>
+                    <th>Contact Info</th>
 
                 </tr> 
             </thead>    
@@ -40,12 +41,15 @@
                         <%var isbn = courses[i].isbn; %>
                         <%var price = courses[i].price; %>
                         <%var condition = courses[i].condition; %>
+                        <%var contact_info = courses[i].contact_info %>
                         <tr>
                             <td><%= course_code  %></td>
                             <td><%= name %></td>
                             <td><%= isbn %></td>
                             <td><%= price %></td>
                             <td><%= condition %></td>
+                            <td><%= contact_info %></td>
+
                         </tr>
                     <% } %>
                

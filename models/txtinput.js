@@ -30,6 +30,10 @@ var txtInputSchema = new Schema({
 		type: String,
 		trim: true
 	},
+	contact_info: {
+		type: String,
+		trim: true
+	},
 });
 
  txtInputSchema.methods.saveInput = function() {

@@ -22,6 +22,7 @@
                 <tr class="textTableHeader">
                     <th>Material Type</th>
                     <th>Course Code</th>
+                    <th>Contact Info</th>
                 </tr> 
             </thead>    
             <tbody class="techBody">
@@ -33,9 +34,11 @@
                     <% for(var i = 0; i < tech.length; i++) { %>
                         <%var course_code = tech[i].course_code; %>
                         <%var study_material = tech[i].study_material; %>
+                        <%var contact_info = tech[i].contact_info; %>
                         <tr>
                             <td><%= course_code  %></td>
                             <td><%= study_material %></td>
+                            <td><%= contact_info%></td>
                         </tr>
                     <% } %>
                
